@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Experiment_5</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Experiment_5.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>    
+        
+    </head>
+    <body class="container-fluid bg-dark text-white ">
+        <h1 class="text-primary text-center">EXPERIMENT - 5</h1>
+        <div id="q1" class="row  d-flex justify-content-center">
+            <h3 class="text-center">Shortest and Longest Word</h3>
+            <fieldset class="border p-2 col-md-5">
+        <label for="s">Enter String : </label>
+        <input type="text" id="s">
+        <br><br>
+        <button class="bg-secondary text-white" type="submit" onclick="f1()">Submit</button>
+        <br>
+        SHORTEST STRING: <span id="min"></span>
+        <br>
+        LONGEST STRING: <span id="max"></span>
+    </fieldset>
+        </div>
+        <div id="q2" class="row d-flex justify-content-center">
+            <h3 class="text-center">Calculate your Body Mass Index(BMI)!</h3>
+            <fieldset class="border p-2 col-md-5">
+                Weight (in Kilograms):&nbsp;<input type="text" id="weight">
+                <br><br>
+                Height (in meters):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="height">
+                <br><br>
+                <button class="bg-secondary text-white" onclick="f2_calculate()">Calculate</button>
+                <br>
+                Your Bmi is <span id="score"></span>
+                <br>
+                Your Body Type is : <span id="Type"></span>
+            </fieldset>
+        </div>
+        <div id="q3" class="row d-flex justify-content-center">
+            <h3 class="text-center">Fruit Farm</h3>
+            <fieldset class="border p-2 col-md-5">
+                Rows: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="rows">
+                <br><br>
+                Columns: &nbsp;<input type="text" id="columns"><br><br>
+                <button class="bg-secondary text-white" onclick="f3_grow()">Plant Garden</button>
+                <div id="garden"></div>
+            </fieldset>
+        </div>
+        <div id="q4" class="row d-flex justify-content-center">
+            <h3 class="text-center">The Currency Convertor</h3>
+            <fieldset class="border p-2 col-md-5">
+                Convert &nbsp;<input type="text" id="data">
+                <br><br>
+                From &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="from">
+                    <option>Indian Rupee</option>
+                    <option>US Dollar</option>
+                </select>
+                <br><br>
+                To &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="to">
+                    <option>US Dollar</option>
+                    <option>Indian Rupee</option>
+                </select>
+                <br><br>
+                <button class="bg-secondary text-white" onclick="f4_convert()">Convert</button>
+                <div id="con"></div>
+            </fieldset>
+        </div>
+        <div id="q5" class="row d-flex justify-content-center">
+            <h3 class="text-center">Coin Flip</h3>
+            <fieldset class="border p-2 col-md-5">
+                <button class="bg-secondary text-white" id="flip" onclick="f5_flipFunction()">Flip</button>
+                <br><br>
+                Heads Total: <span id="heads">0</span><br>
+                Tails Total: <span id="tails">0</span><br>
+                <img width="" height="" id="img" src=""></img><br>
+            </fieldset>
+        </div>
+        <div id="q6" class="row d-flex justify-content-center">
+            <h3 class="text-center">Birthday Cake Order Form</h3>
+            <fieldset class="border p-2 col-md-5">
+                No of 1/2kg Cakes : &nbsp;<input type="text" value="0" id="small"><br><br>
+                No of 1kg Cakes : &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="0" id="medium"><br><br>
+                No of 2kg Cakes : &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="0" id="large"><br><br>
+                Tip:
+                <label><input type="radio" value="10" name="tip">10%</label>
+                <label><input type="radio" value="15" name="tip" checked>15%</label>
+                <label><input type="radio" value="20" name="tip">20%</label><br>
+                <button class="bg-secondary text-white" id="submit" onclick="f6()">Calculate Order</button>
+                <br><br>
+                <div id="price"></div>
+            </fieldset>
+        </div>
+    </body>
+</html>

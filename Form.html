@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            FORM
+        </title>
+        <style>
+            label{
+                display: inline-block;
+                width: 140px;            
+            }
+            table,tr,td{
+                border: 1px solid;
+                border-collapse: collapse;
+            }
+            body{
+                border: 1px solid;
+                padding: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Submit Your Resume</h1>
+        <fieldset style="width : 30%">
+            <legend>
+                Personal Details
+            </legend>
+            <form>
+                <br>
+                <label for="firstname">* First Name:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter your Firstname" required></p>
+                <label for="middlename">* Middle Name:</label>
+                <input type="text" id="middlename" name="middlename" placeholder="Enter your Middlename" required></p>
+                <label for="lastname">* Last Name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter your Lastname" required></p>
+                <label for="DOB"> Date of Birth</label>
+                <input type="date" id="DOB" name="Date of Birth"></p>
+                <label for="age">Age</label>
+                <input type="number" min=0 value="0" id="Age" name="Age"></p>
+                <label for="Gender">Gender</label>
+                <input type="radio" id="Gender" name="Gender">Male</input>
+                <input type="radio" id="Gender" name="Gender">Female</input>
+            </form>
+        </fieldset >
+        <input type="range" min="0" value="20" max="100" id="range1"></input>
+        <label for="range1">&nbsp; 20% out of 100%</label>
+        <fieldset style="width : 30%">
+            <legend>Address Details</legend>
+            <br>
+            <form> 
+                <label for="Address">Address</label>
+                <textarea name="Address" id="Address" cols="30" rows="5"></textarea></p>
+                <label for="City">City/Town</label>
+                <textarea name="City" id="City" cols="15" rows="1"></textarea></p>
+                <label for="State">State</label>
+                <textarea name="State" id="State" cols="15" rows="1"></textarea></p>
+                <label for="ZipCode">Zipcode</label>
+                <textarea name="ZipCode" id="Zipcode" cols="15" rows="1" placeholder="only 6 numbers"></textarea></p>
+            </form>
+        </fieldset >
+        <input type="range" min="0" value="40" max="100" id="range2"></input>
+        <label for="range2">&nbsp; 40% out of 100%</label>
+        <fieldset style="width : 40%">
+            <legend>Contact Information</legend>
+            <form>
+                <label for="Telephone">Telephont</label>
+                <input type="tel" id="Telephone" placeholder="(044) 999-9999"></p> 
+                <label for="Mobile">*Mobile</label>
+                <input type="tel" id="Mobile" placeholder="(+91) 99999-99999"></p>
+                <label for="Email">*Email</label>
+                <input type="email" id="Email" placeholder="Valid email"></p>
+                <label for="Website">Website</label>
+                <input type="url" id="Website" placeholder="Valid url"></p>
+            </form>
+        </fieldset>
+        <input type="range" min="0" value="60" max="100" id="range3"></input>
+        <label for="range3">&nbsp; 60% out of 100%</label>
+        <fieldset style="width : 70%">
+            <legend>Education Details</legend>
+            <form >
+            <table>
+                
+                <tr>
+                    <td>Qualification</td>
+                    <td>Board/University</td>
+                    <td>Country</td>
+                    <td>Starting Year</td>
+                    <td>Ending Year</td>
+                    <td>Percentage</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="qual">10th</input></td>
+                    <td><input type="text" id="board" placeholder="Board/University"></td>
+                    <td><select name="country" id="country">
+                        <option value="NONE" selected>choose</option>
+                        <option value="IND">India</option>
+                        <option value="AUS">Australia</option>
+                        <option value="USA">America</option>
+                    </select></td>
+                    <td><input type="date" id="st" name="startingyear" value="2012-04-22"></td>
+                    <td><input type="date" id="et" name="endingyear" value="2012-04-22"></td>
+                    <td><input type="number" min=0 value="70" id="Percentage" name="Percentage"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="qual">12th</input></td>
+                    <td><input type="text" id="board" placeholder="Board/University"></td>
+                    <td><select name="country" id="country">
+                        <option value="NONE" selected>choose</option>
+                        <option value="IND">India</option>
+                        <option value="AUS">Australia</option>
+                        <option value="USA">America</option>
+                    </select></td>
+                    <td><input type="date" id="st" name="startingyear" value="2012-04-22"></td>
+                    <td><input type="date" id="et" name="endingyear" value="2012-04-22"></td>
+                    <td><input type="number" min=0 value="70" id="Percentage" name="Percentage"></td>
+                </tr>           
+            <tr>
+                <td><input type="checkbox" name="qual">B.Tech</input></td>
+                <td><input type="text" id="board" placeholder="Board/University"></td>
+                <td><select name="country" id="country">
+                    <option value="NONE" selected>choose</option>
+                    <option value="IND">India</option>
+                    <option value="AUS">Australia</option>
+                    <option value="USA">America</option>
+                </select></td>
+                <td><input type="date" id="st" name="startingyear" value="2012-04-22"></td>
+                <td><input type="date" id="et" name="endingyear" value="2012-04-22"></td>
+                <td><input type="number" min=0 value="70" id="Percentage" name="Percentage"></td>
+            </tr>
+        <tr>
+            <td><input type="checkbox" name="qual">M.Tech</input></td>
+            <td><input type="text" id="board" placeholder="Board/University"></td>
+            <td><select name="country" id="country">
+                <option value="NONE" selected>choose</option>
+                <option value="IND">India</option>
+                <option value="AUS">Australia</option>
+                <option value="USA">America</option>
+            </select></td>
+            <td><input type="date" id="st" name="startingyear" value="2012-04-22"></td>
+            <td><input type="date" id="et" name="endingyear" value="2012-04-22"></td>
+            <td><input type="number" min=0 value="70" id="Percentage" name="Percentage"></td>
+        </tr>
+        </table>
+        </form>
+        </fieldset>
+        <input type="range" min="0" value="80" max="100" id="range4"></input>
+        <label for="range4">&nbsp; 80% out of 100%</label>
+        <fieldset style="width : 50%">
+            <label style="display:contents ;" for="f">Attack your file in .doc or .pdf format</label>
+            <input type="file" ></p>
+            <td><input type="checkbox" name="fill">Filled all the details</input></td>
+        </fieldset>
+        <input type="range" min="0" value="100" max="100" id="range5"></input>
+        <label for="range5">&nbsp; 100% out of 100%</label></p>
+        <center><input style="text-align: center;"type="submit"></center>
+    </body>
+</html>

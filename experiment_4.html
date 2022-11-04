@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>    
+    
+</head>
+<body class="bg-dark">
+    <div class="container-fluid header bg-dark">
+        <div class="row">
+            <div class="col-sm-5 text-white p-3">
+                <h1>COACH</h1>
+            </div>
+            <div class="col-sm-7 text-white p-4">
+                <nav>
+                    <a class="text-white px-3 text-decoration-none" href="">Hompages</a>
+                    <a class="text-white px-3 text-decoration-none" href="">Pages</a>
+                    <a class="text-white px-3 text-decoration-none" href="">Blog</a>
+                    <a class="text-white px-3 text-decoration-none" href="">Resources</a>
+                    <a class="text-white px-3 text-decoration-none" href="">Account</a>
+                    <a class="text-white px-3 text-decoration-none" href="">Shop</a>
+                    <a class="text-white px-3 text-decoration-none" href="">Docs</a>
+                    <button class="bg-warning px-3">Buy Now</button>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active">
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1" >
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2" >
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="3" >
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="4" >
+                </div>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/7580.jpg" alt="Image 1" width="100%" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/508252.jpg" alt="Image 2" width="100%" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/644887.jpeg" alt="Image 3" width="100%" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/677543.jpeg" alt="Image 4" width="100%" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/1053268.jpeg" alt="Image 5" width="100%" height="500">
+                  </div>
+                </div>
+                <!-- Left and right controls -->
+                <button type="button" class="carousel-control-prev" href="#demo" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  </button>
+                <button type="button" class="carousel-control-next" href="#demo" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>   
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+        <div class="col-sm-6  bg-dark text-white border border-light">
+                <h2 class="text-primary text-center">Registration Form</h2>
+                <form class="p-3">
+                    <div class="form-group row">
+                      <div class="col-sm-6 ">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                      </div>    
+                      <div class="col-sm-6">
+                        <label for="pass">Password</label>
+                        <input type="password" class="form-control" id="pass" placeholder="Password">
+                      </div></div>
+                <div><label class="col-sm-10">Address</label></div>
+                <input type="text" class="form-control mb-3  col-sm-10" placeholder="1234 Main St">
+                <div><label class="col-sm-10">Address2</label></div>
+                <input type="text" class="form-control mb-3  col-sm-10" placeholder="Apartment, studio or floor">
+                <div class="form-group row">
+                    <div class="col-sm-5">
+                        <label for="city">City</label>
+                        <input type="text" id="city" class="form-control mb-3" >
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="state" >State</label>
+                        <select id="state"class="form-control mb-3 col-sm-3">
+                            <option selected>Choose...</option>
+                            <option value="1">Tamil Nadu</option>
+                            <option value="2">Kerala</option>
+                            <option value="3">Pondichery</option>
+                            </select>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="zip" >Zip</label>
+                        <input id="zip" type="text" class="form-control mb-3  col-sm-2">
+                    </div>
+                </div>
+                <div>
+                    <label class="form-check-label mb-3"><input type="checkbox" class="form-check-input">Check Me Out</label>
+                </div>
+                <button class="btn btn-primary mb-3">Sign in</button>
+            </form>
+        </div>
+        <table  class="col-sm-6  bg-dark text-white table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Reg.No</th>
+                    <th>Name of the Participant</th>
+                    <th>Collaborative Activity</th>
+                    <th>Collaborating Agency</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>URK20CS2075</td>
+                    <td>RENEESH DENNY</td>
+                    <td>Web Development</td>
+                    <td>Karunya</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>URK20CS2065</td>
+                    <td>ALAN DANIELS</td>
+                    <td>Web Development</td>
+                    <td>Karunya</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>URK20CS2062</td>
+                    <td>JASON DEVADOSS</td>
+                    <td>Web Development</td>
+                    <td>Karunya</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>URK20CS2069</td>
+                    <td>JOSHUA JEBAKUMAR</td>
+                    <td>Web Development</td>
+                    <td>Karunya</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    </div>
+</body>
+</html>
